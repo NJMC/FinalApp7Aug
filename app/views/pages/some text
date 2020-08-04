@@ -1,0 +1,53 @@
+ --<% if current_user:region = "Dublin City" %>
+<% end %>
+
+<div><% @corkmap %></div>\
+-- !>
+
+
+
+<h1><%= @title %></h1>
+
+
+    <% if current_user && user.region == "Dublin"%>
+<%= render partial: '/pages/maplimerick' %>
+    <% else %>
+<%= render partial: '/pages/mapwaterford' %>
+    <% end %>
+
+
+<%= render partial: '/pages/mapdublin' %>
+
+<%= render partial: '/pages/mapcork' %>
+
+<%= render partial: '/pages/mapgalway' %>
+
+
+
+
+
+    <% @regional_profiles.where(name: 'Dublin City') do |regional_profile| %>
+    <% @regional_profiles.where(:county == "dublin") do |regional_profile| %>
+    <% @regional_profiles.where("county = 'Dublin'") do |regional_profile| %>
+    <% @regional_profiles.where("id = 1", true) do |regional_profile| %>
+    
+    
+    
+    
+    
+<% if current_user.try(:admin?) %>
+  <h1> HELLLOWWWWWWWWWWWW </h1>
+<% end %>
+
+
+
+
+
+<% if current_user.try(:admin?) && current_user.region == "1" %>
+<%= render partial: '/pages/mapdublin' %>
+<% end %>
+
+
+
+
+

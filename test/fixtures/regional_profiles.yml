@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  population: MyText
+  county: MyText
+  local_govt: MyText
+  description: MyText
+  environment_id: 1
+  image_url: MyString
+  updated: 2020-07-30
+
+two:
+  name: MyString
+  population: MyText
+  county: MyText
+  local_govt: MyText
+  description: MyText
+  environment_id: 1
+  image_url: MyString
+  updated: 2020-07-30

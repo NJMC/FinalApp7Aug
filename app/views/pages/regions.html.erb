@@ -1,0 +1,243 @@
+
+
+
+
+
+
+
+
+
+    <section id="about" class="about">
+      <div class="container">
+
+
+        <div class="section-title">
+          <h1>Green-Rep Regions</h1>
+        </div>
+
+
+        <div class="section-title">
+          <h2>Dublin</h2>
+        </div>
+
+        <div class="row">
+            
+          <div class="col-lg-6 order-1 order-lg-2">
+            <%= image_tag ("dublin.jpg"), class: "img-fluid"%>
+            <!-- <img src="/home/ubuntu/environment/greenrep/app/assets/images/energy_systems.png" class="img-fluid" alt=""> -->
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              <% if current_user && current_user.region == "Dublin"%>
+              <br><br><a><strong><%= link_to 'View your profile.', pages_user_profile_path %></strong></a>
+              <% elsif !current_user %>
+              <br><br><a><strong><%= link_to 'Create a Dublin profile.', new_user_registration_path %></strong></a>
+              <% end %>
+
+              
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Limerick</h2>
+        </div>
+
+        <div class="row">
+            
+          <div class="col-lg-6 order-1 order-lg-2">
+            <%= image_tag ("Limerick.jpg"), class: "img-fluid"%>
+            <!-- <img src="/home/ubuntu/environment/greenrep/app/assets/images/energy_systems.png" class="img-fluid" alt=""> -->
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              <% if current_user && current_user.region == "Limerick"%>
+              <br><br><a><strong><%= link_to 'View your profile.', pages_user_profile_path %></strong></a>
+              <% elsif !current_user %>
+              <br><br><a><strong><%= link_to 'Create a Limerick profile.', new_user_registration_path %></strong></a>
+              <% end %>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+
+
+
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Cork</h2>
+        </div>
+
+        <div class="row">
+            
+          <div class="col-lg-6 order-1 order-lg-2">
+            <%= image_tag ("Cork.jpg"), class: "img-fluid"%>
+            <!-- <img src="/home/ubuntu/environment/greenrep/app/assets/images/energy_systems.png" class="img-fluid" alt=""> -->
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              <% if current_user && current_user.region == "Cork"%>
+              <br><br><a><strong><%= link_to 'View your profile.', pages_user_profile_path %></strong></a>
+              <% elsif !current_user %>
+              <br><br><a><strong><%= link_to 'Create a Cork profile.', new_user_registration_path %></strong></a>
+              <% end %>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+
+
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Galway</h2>
+        </div>
+
+        <div class="row">
+            
+          <div class="col-lg-6 order-1 order-lg-2">
+            <%= image_tag ("Galway.jpg"), class: "img-fluid"%>
+            <!-- <img src="/home/ubuntu/environment/greenrep/app/assets/images/energy_systems.png" class="img-fluid" alt=""> -->
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              <% if current_user && current_user.region == "Galway"%>
+              <br><br><a><strong><%= link_to 'View your profile.', pages_user_profile_path %></strong></a>
+              <% elsif !current_user %>
+              <br><br><a><strong><%= link_to 'Create a Galway profile.', new_user_registration_path %></strong></a>
+              <% end %>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Waterford</h2>
+        </div>
+
+        <div class="row">
+            
+          <div class="col-lg-6 order-1 order-lg-2">
+            <%= image_tag ("waterford.jpg"), class: "img-fluid"%>
+            <!-- <img src="/home/ubuntu/environment/greenrep/app/assets/images/energy_systems.png" class="img-fluid" alt=""> -->
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum. 
+              <% if current_user && current_user.region == "Waterford"%>
+              <br><br><a><strong><%= link_to 'View your profile.', pages_user_profile_path %></strong></a>
+              <% elsif !current_user %>
+              <br><br><a><strong><%= link_to 'Create a Waterford profile.', new_user_registration_path %></strong></a>
+              <% end %>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->

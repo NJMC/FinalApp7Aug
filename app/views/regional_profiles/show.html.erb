@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @regional_profile.name %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @regional_profile.population %>
+</p>
+
+<p>
+  <strong>County:</strong>
+  <%= @regional_profile.county %>
+</p>
+
+<p>
+  <strong>Local govt:</strong>
+  <%= @regional_profile.local_govt %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @regional_profile.description %>
+</p>
+
+<p>
+  <strong>Environment:</strong>
+  <%= @regional_profile.environment_id %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @regional_profile.image_url %>
+</p>
+
+<p>
+  <strong>Updatedssss:</strong>
+  <%= @regional_profile.updated %>
+</p>
+
+
+<% if current_user.try(:admin?) %>
+<%= link_to 'Edit', edit_regional_profile_path(@regional_profile) %> |
+<% end %>
+
+<%= link_to 'Back', regional_profiles_path %>

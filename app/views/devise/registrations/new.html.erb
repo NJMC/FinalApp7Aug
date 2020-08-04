@@ -1,0 +1,23 @@
+  <section>
+    <div class="container">
+
+<h2>Sign up</h2>
+<p>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</p>
+
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :email, placeholder: 'user@domain.com' %>
+  <%= f.input :password, required: true, autofocus:true, hint: 'No special characters.',input_html: { autocomplete: "new-password" }  %>
+  <%= f.input :password_confirmation, required: true, autofocus:true, hint: 'No special characters.', input_html: { autocomplete: "new-password" }  %>
+  <%= f.input :organisation %>
+  <%= f.input :region, as: :radio_buttons, collection: [['Dublin'], ['Galway'], ['Limerick'], ['Cork'], ['Waterford']], value_method: :first %>
+  <%= f.button :submit, "Sign up" %>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+</div>
+<br>
+<br>
+</section><!-- #hero -->

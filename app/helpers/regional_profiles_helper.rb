@@ -1,0 +1,2 @@
+module RegionalProfilesHelper
+end
