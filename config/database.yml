@@ -18,7 +18,7 @@
 
 development:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf-8
   database: db_name
   username: mac
   password: mac
@@ -55,7 +55,7 @@ development:
 
 default: &default
   adapter: postgresql
-  encoding: unicode
+  encoding: utf-8
   database: greenrep_db
   username: greenrep_admin
   password: K1]m1stF@)Tt
@@ -128,5 +128,6 @@ test:
 production:
   <<: *default
   database: greenrep_db
+  encoding: utf-8
   username: appname
   password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
