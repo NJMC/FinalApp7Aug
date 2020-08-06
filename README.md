@@ -22,5 +22,10 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+<<<<<<< HEAD
 # greenrep
 # finalncirl
+=======
+# finalapp
+>>>>>>> 834ff0888439aec7fac09e0def6b3bcf23cdd324
+# greenrepfinalapp
