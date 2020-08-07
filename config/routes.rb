@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     resources :comments
   end
   
-  get 'pages/user_profile'
+  get 'pages/user_profile' 
 
   root 'pages#home'
 
