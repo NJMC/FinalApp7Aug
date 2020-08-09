@@ -17,3 +17,5 @@ application up and running.
   sudo apt-get install postgresql postgresql-contrib libpq-dev
 
   Run ‘bundle install’ again and then ‘rake db:migrate’
+  
+  Administrator login: Login info@greenrep.com Password: 123456
