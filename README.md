@@ -18,4 +18,4 @@ application up and running.
 
   Run ‘bundle install’ again and then ‘rake db:migrate’
   
-  Administrator login: Login info@greenrep.com Password: 123456
+  Administrator login: info@greenrep.com Password: 123456
