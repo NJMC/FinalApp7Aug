@@ -3,34 +3,17 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+  Create a Cloud9 instance using Ubuntu 18.04 - free micro tier.
 
-* System dependencies
+  Clone the following git repository: https://github.com/NJMC/FinalApp7Aug.git
 
-* Configuration
+  cd into the newly downloaded folder in Cloud9.
 
-* Database creation
+  Run Bundle install in Cloud9 IDE
 
-* Database initialization
+  An error will be returned relating to the PG Gem library installation. In order to fix this error run:
 
-* How to run the test suite
+  sudo apt-get install postgresql postgresql-contrib libpq-dev
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-<<<<<<< HEAD
-# greenrep
-# finalncirl
-=======
-# finalapp
->>>>>>> 834ff0888439aec7fac09e0def6b3bcf23cdd324
-# greenrepfinalapp
-# finallappncirl
-# finallappncirl
-# finalapp
-# finalapp
-# FinalApp7Aug
+  Run ‘bundle install’ again and then ‘rake db:migrate’
